@@ -1,3 +1,66 @@
+interface Size {
+    size_1: number
+    size_2: number
+    size_4: number
+    size_8: number
+    size_10: number
+    size_12: number
+    size_14: number
+    size_16: number
+    size_20: number
+    size_24: number
+    size_28: number
+    size_32: number
+    size_36: number
+    size_40: number
+    size_44: number
+    size_48: number
+    size_52: number
+    size_56: number
+    size_60: number
+    size_64: number
+    size_72: number
+    size_80: number
+    size_96: number
+}
+
+export const SIZES: Size = {
+    size_1: 1,
+    size_2: 2,
+    size_4: 4,
+    size_8: 8,
+    size_10: 10,
+    size_12: 12,
+    size_14: 14,
+    size_16: 16,
+    size_20: 20,
+    size_24: 24,
+    size_28: 28,
+    size_32: 32,
+    size_36: 36,
+    size_40: 40,
+    size_44: 44,
+    size_48: 48,
+    size_52: 52,
+    size_56: 56,
+    size_60: 60,
+    size_64: 64,
+    size_72: 72,
+    size_80: 80,
+    size_96: 96,
+}
+
+interface Width extends Size {}
+interface Height extends Size {}
+
+export const WIDTH: Width = {
+    ...SIZES,
+}
+
+export const HEIGHT: Height = {
+    ...SIZES,
+}
+
 interface Spacing {
     space_2: number
     space_4: number
